@@ -138,6 +138,7 @@ export function Post() {
               type="text"
               id="titulo"
               value={!post.titulo ? "" : post.titulo}
+              maxLength={20}
               placeholder="title"
               onChange={(e) => {
                 setPost({
